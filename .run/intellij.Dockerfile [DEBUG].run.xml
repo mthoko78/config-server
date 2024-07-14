@@ -1,0 +1,18 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="intellij.Dockerfile [DEBUG]" type="Remote">
+    <module name="service-config-server" />
+    <option name="USE_SOCKET_TRANSPORT" value="true" />
+    <option name="SERVER_MODE" value="false" />
+    <option name="SHMEM_ADDRESS" />
+    <option name="HOST" value="localhost" />
+    <option name="PORT" value="5005" />
+    <option name="AUTO_RESTART" value="false" />
+    <RunnerSettings RunnerId="Debug">
+      <option name="DEBUG_PORT" value="5005" />
+      <option name="LOCAL" value="false" />
+    </RunnerSettings>
+    <method v="2">
+      <option name="com.intellij.docker.debug.DockerBeforeRunTask" command="java -cp app:app/lib/* -noverify -XX:TieredStopAtLevel=1 -Dspring.backgroundpreinitializer.ignore=true -Dspring.jmx.enabled=false -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005 com.mthoko.service.config.server.ServiceConfigServerApplication ${0} ${@}" run-config="intellij.Dockerfile [RUN]" />
+    </method>
+  </configuration>
+</component>

@@ -1,0 +1,27 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: service-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/mthoko78/service-config.git
+          default-label: master
+          force-pull: true
+          refreshRate: 120
+          cloneOnStart: true
+          searchPaths: '{application}'
+          skipSslValidation: true
+          strict-host-key-checking: false
+management:
+  endpoint:
+    health:
+      probes:
+        enabled: true
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'
