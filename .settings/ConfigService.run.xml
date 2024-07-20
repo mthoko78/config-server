@@ -1,9 +1,11 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="ServiceConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+  <configuration default="false" name="ConfigService" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <option name="ACTIVE_PROFILES" value="dev" />
     <additionalParameters>
       <param>
+        <option name="enabled" value="true" />
         <option name="name" value="server.port" />
-        <option name="value" value="8090" />
+        <option name="value" value="8888" />
       </param>
     </additionalParameters>
     <module name="config-service" />

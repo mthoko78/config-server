@@ -10,6 +10,7 @@ target/
 .factorypath
 .project
 .settings
+!.settings/ConfigService.run.xml
 .springBeans
 .sts4-cache
 

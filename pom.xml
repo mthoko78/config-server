@@ -10,9 +10,9 @@
         <relativePath/>
     </parent>
 
-    <artifactId>service-config-server</artifactId>
+    <artifactId>config-service</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <name>service-config-server</name>
+    <name>config-service</name>
     <description>Spring Cloud Config server for our Spring applications</description>
 
     <properties>

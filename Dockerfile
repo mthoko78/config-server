@@ -62,6 +62,6 @@ ${JVM_OPTS} \
 -Dspring.backgroundpreinitializer.ignore=true \
 -Dspring.jmx.enabled=false \
 ${JAVA_OPTS} \
-com.mthoko.service.config.server.ServiceConfigServerApplication \
+com.mthoko.service.config.server.ConfigService \
 ${0} \
 ${@}"]

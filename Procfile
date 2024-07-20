@@ -1,1 +1,1 @@
-web: java -jar target/service-config-server-1.0.0-SNAPSHOT.jar
+web: java -jar target/config-service-1.0.0-SNAPSHOT.jar
