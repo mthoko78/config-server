@@ -1,0 +1,33 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: service-config-server
+  cloud:
+    config:
+      server:
+        git:
+          skipSslValidation: true
+  boot:
+    admin:
+      client:
+        url: http://localhost:8081
+        username: ${adminServiceUser:Integration_client}
+        password: ${adminServicePassword:password}
+        instance:
+          service-host-type: ip
+          metadata:
+            user:
+              name: ${spring.boot.admin.client.username}
+              password: ${spring.boot.admin.client.password}
+management:
+  endpoint:
+    health:
+      probes:
+        enabled: true
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: 'health'
