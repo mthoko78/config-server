@@ -8,7 +8,7 @@ spring:
       server:
         git:
           uri: https://github.com/mthoko78/service-config.git
-          default-label: master
+          default-label: main
           force-pull: true
           refreshRate: 120
           cloneOnStart: true
