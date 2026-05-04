@@ -1,5 +1,6 @@
 server:
   port: ${PORT:8888}
+
 spring:
   application:
     name: config-server
@@ -15,6 +16,13 @@ spring:
           searchPaths: '{application}'
           skipSslValidation: true
           strict-host-key-checking: false
+  boot:
+    admin:
+      client:
+        username: ${SPRING_BOOT_ADMIN_USERNAME:admin}
+        password: ${SPRING_BOOT_ADMIN_PASSWORD:password}
+        url: ${SPRING_BOOT_ADMIN_URL:http://localhost:8084}
+
 management:
   endpoint:
     health:
