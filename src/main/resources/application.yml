@@ -22,6 +22,11 @@ spring:
         username: ${SPRING_BOOT_ADMIN_USERNAME:admin}
         password: ${SPRING_BOOT_ADMIN_PASSWORD:password}
         url: ${SPRING_BOOT_ADMIN_URL:http://localhost:8084}
+        instance:
+          service-url: ${SERVICE_BASE_URL}/
+          base-service-url: ${SERVICE_BASE_URL}/
+          management-url: ${SERVICE_BASE_URL}/actuator
+          health-url: ${SERVICE_BASE_URL}/actuator/health
 
 management:
   endpoint:
@@ -33,3 +38,5 @@ management:
     web:
       exposure:
         include: '*'
+
+SERVICE_BASE_URL: http://localhost:${server.port}
