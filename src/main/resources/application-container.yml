@@ -1,0 +1,2 @@
+SPRING_BOOT_ADMIN_URL: http://spring-boot-admin:8082
+SERVICE_BASE_URL: https://config-server:${server.port}

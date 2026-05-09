@@ -1,0 +1,2 @@
+SPRING_BOOT_ADMIN_URL: http://localhost:8082
+SERVICE_BASE_URL: https://localhost:${server.port}
